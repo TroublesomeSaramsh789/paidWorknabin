@@ -28,20 +28,6 @@ interface userdataType {
   relationship: relationshipEnum;
   diseaseName: string;
 }
-// export type userContexConsumer {
-//   value: userdataType;
-//   controllers: {
-//     nameHandler: () => void;
-//     ageHandler: () => void;
-//     idNumberHandler: () => void;
-//     idTypeHandler: () => void;
-//     genderHandler: () => void;
-//     dateHandler: () => void;
-//     phoneNumberHandler: () => void;
-//     relationshipHandler: () => void;
-//     diseaseNameHandler: () => void;
-//   };
-// }
 
 const userProvider = ({ children }) => {
   const [state, setState] = React.useState<userdataType>({
